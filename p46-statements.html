@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Use Statements to Do Some Shit</title>
+</head>
+
+<body>
+
+<script type="text/javascript">
+
+var today = new Date();
+var theHour = today.getHours();
+
+if (theHour > 18) {
+	
+	var theGreeting = 'Good Evening';
+	
+}
+
+else if (theHour > 12) {
+	
+	var theGreeting = 'Good Afternoon';
+	
+}
+
+else if (theHour > 0) {
+	
+	var theGreeting = 'Good Morning';
+	
+}
+
+document.write( '<h1>' + theGreeting + ', Bitch!</h1>');
+
+var result = (6 * 10) + 9;
+
+document.write( '<p>' + result + '</p>');
+
+var best = "It was the best of times."
+var worst = "It was the worst of times."
+
+document.write( '<p>' + best + '&nbsp;' + worst + '</p>' );
+
+</script>
+
+</body>
+</html>

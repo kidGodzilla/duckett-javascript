@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Using Arithmetic Operators, Bitch.</title>
+</head>
+
+<body>
+
+<p>Subtotal: <span id="subtotal">X</span></p>
+<p>Shipping: <span id="shipping">X</span></p>
+<p>Total: <span id="total">X</span></p>
+
+<script type="text/javascript">
+
+var subtotal = (13 + 1) * 5;
+var shipping = 0.5 * (13 + 1);
+var total = subtotal + shipping;
+
+document.getElementById('subtotal').textContent = subtotal;
+document.getElementById('shipping').textContent = shipping;
+document.getElementById('total').textContent = total;
+
+
+</script>
+
+</body>
+</html>

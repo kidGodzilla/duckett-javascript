@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Using Arrays to Do Some Other Shit</title>
+</head>
+
+<body>
+
+<h2>Is it...</h2>
+<p><span id="colors1">X</span>, <span id="colors2">X, </span>, <span id="colors3">X </span>or <span id="colors4">X</span>?</p>
+
+<script type="text/javascript">
+
+var colorsOne = new Array ('black' , 'white' , 'mexi' , 'jew');
+
+var elColorsOne = document.getElementById('colors1');
+
+elColorsOne.textContent = colorsOne[0];
+
+var colorsTwo = new Array ('black' , 'white' , 'mexi' , 'jew');
+
+colorsTwo[1] = 'cracker';
+
+var elColorsTwo = document.getElementById('colors2');
+
+elColorsTwo.textContent = colorsTwo[1];
+
+</script>
+
+
+</body>
+</html>

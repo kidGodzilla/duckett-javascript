@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Using Variables to Do Some Shit</title>
+
+
+</head>
+
+<body>
+
+<!-- Begin Numbers -->
+<h2>Variables to Store Numbers</h2>
+<p>The Cost is: <span id="cost">x</span></p>
+
+<script type="text/javascript">
+
+var price = 5;
+var quantity = 14;
+var total = price * quantity;
+
+var elTotal = document.getElementById('cost');
+
+elTotal.textContent = '$' + total;
+
+</script>
+<!-- End Numbers -->
+
+<!-- Begin Strings -->
+<h2>Vaiables to Store Strings</h2>
+<p>Wass'up, <span id="name">X</span>?</p>
+<p>Hey... <span id="note">X</span>!</p>
+
+<script type="text/javascript">
+
+var username = 'Beeotch';
+var message = 'Fuck you, you fucking fuck';
+
+var elQuestion = document.getElementById('name');
+
+elQuestion.textContent = username;
+
+var elMessage = document.getElementById('note');
+
+elMessage.textContent = message;
+
+</script>
+<!-- End Strings -->
+
+<!-- Begin Quotes Inside a String -->
+<h2>Using Quotes Inside a String</h2>
+<p id="title">X</p>
+<p id="special">X</p>
+
+<script type="text/javascript">
+
+var title = "Molly's Special Offers";
+var offer = '<a href=\"#\">25% off your next dildoh!</a>';
+
+var elTitle = document.getElementById('title');
+
+elTitle.innerHTML = title;
+
+var elOffer = document.getElementById('special');
+
+elOffer.innerHTML = offer;
+
+</script>
+<!-- End Quotes Inside a String -->
+
+<!-- Begin Booleans -->
+<h2>Using Boolean Values</h2>
+<p>Available: <span id="stock">X</span></p>
+<p>Shipping: <span id="shipping">X</span></p>
+
+<script type="text/javascript">
+
+var stocked = true;
+var shipped = false;
+
+
+var elStock = document.getElementById('stock');
+
+elStock.className = stocked;
+
+var elShip = document.getElementById('shipping');
+
+elShip.className = shipped;
+
+</script>
+
+<style type="text/css" media="all">
+
+.true {
+	color: green; 
+	}
+	
+.false {
+	color: red;
+}
+
+</style>
+<!-- End Booleans -->
+
+</body>
+</html>

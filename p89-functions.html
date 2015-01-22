@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Let's Write Some Functions, Bitch.</title>
+</head>
+
+<body>
+
+<h2>Let's write some functions, shall we?</h2>
+<p><strong>Message One:</strong>&nbsp;<span id="message1">X</span></p>
+
+<script type="text/javascript">
+
+// A Basic Function
+var messageOne = 'I am on page 89 right now!'; // create a stoopid message
+
+function updateMessageOne() { // create a stoopid function
+
+  document.getElementById('message1').textContent = messageOne;
+	
+}
+
+updateMessageOne(); // call the stoopid function
+
+
+// Declaring a Function 
+function sayHello() { // declare the function
+
+  document.write('<p><strong>Interupting Message:</strong>  Hey, Yo.</p>');
+	
+}
+
+sayHello(); // call the function
+
+
+// Declaring & Calling Functions that Need Information
+function getArea(width, height) { // create a function and declare parameters
+
+  document.write('<p><strong>The area is:</strong> ' + width * height + '</p>'); // set "parameters" like variables within the function	
+	
+}
+
+getArea(3, 5); // call the function and pass the "arguments" of the "parameters"
+
+var newWidth = 4; // create new width variable
+var newHeight = 6; // create new height variable
+
+getArea(newWidth, newHeight); // call the function with the new variables as "arguments"
+
+
+// Getting a Single Value out of a Function
+function calculateArea(width, height) { // see the parameters
+	
+	var area = width * height; // create a varible
+	return area; // return variable
+		
+}
+
+var wallOne = calculateArea(3, 5); // create a varible for the first wall that calculates the area
+var wallTwo = calculateArea(8, 5); // create a varible for the second wall that calculates the area
+
+document.write('<p><strong>The area for the first wall is:</strong> ' + wallOne + '</p>'); // tell me the calculated area for the first wall
+document.write('<p><strong>The area for the second wall is:</strong> ' + wallTwo + '</p>'); // tell me the calculated area for the second wall
+
+
+// Getting Multiple Values out of a Function
+function getSize(width, height, depth) {
+
+	var area = width * height;
+	var volume = width * height * depth;
+	var sizes = new Array (area, volume);
+	return sizes;	
+	
+}
+
+var areaOne = getSize(3, 2, 3)[0];
+var volumeOne = getSize(3, 2, 3)[1];
+
+document.write('<p><strong>The area is:</strong> ' + areaOne + '</p>');
+document.write('<p><strong>The volume is:</strong> ' + volumeOne + '</p>');
+
+
+</script>
+</body>
+</html>
