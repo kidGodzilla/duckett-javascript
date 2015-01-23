@@ -94,24 +94,28 @@ document.write('<p><strong>The size is:</strong> ' + size96 +'</p>');
 
 
 // Immediately Invoked function Expressions
-var area96 = ( function() {
+var area96 = (function() {
 	
 	var width = 3;
 	var height = 2;
 	return width * height;
 	
-} () );
+} ());
 	
 document.write('<p><strong>The area is:</strong> ' + area96 + '</p>');
 
 
+// Variable Scope
+function getArea98(width, height) {
 
+var area = width * height; // local function-level variable
+return area;	
+	
+}
 
+var wallSize = getArea98(3, 2); // global variable
 
-
-
-
-
+document.write('<p><strong>The wallsize is:</strong> ' + wallSize + '</p>');
 
 
 </script>
