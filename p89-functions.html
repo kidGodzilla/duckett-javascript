@@ -81,6 +81,37 @@ document.write('<p><strong>The area is:</strong> ' + areaOne + '</p>');
 document.write('<p><strong>The volume is:</strong> ' + volumeOne + '</p>');
 
 
+// Anonymous Functions & Function Expressions
+var area = function(width, height) {
+
+	return width * height;	
+	
+}
+
+var size96 = area (3, 4);
+
+document.write('<p><strong>The size is:</strong> ' + size96 +'</p>');
+
+
+// Immediately Invoked function Expressions
+var area96 = ( function() {
+	
+	var width = 3;
+	var height = 2;
+	return width * height;
+	
+} () );
+	
+document.write('<p><strong>The area is:</strong> ' + area96 + '</p>');
+
+
+
+
+
+
+
+
+
 
 
 </script>
